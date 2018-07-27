@@ -1,0 +1,81 @@
+/* body */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* top */
+.header {
+    padding-top: 30px;
+    padding-bottom: 500px;
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.top-container {
+    background-image: url(https://i.stack.imgur.com/7f3er.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+/* nav_bar */
+#nav_bar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(20, 20, 20, 0.5);
+    padding: 20px;
+}
+
+#nav_bar a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav_bar a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+/* /nav_bar */
+/* /top */
+
+/* content */
+.content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333; 
+}
+
+.projects-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* /content */
+
+
+
