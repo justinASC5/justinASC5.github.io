@@ -5,6 +5,13 @@ body {
 }
 
 /* top */
+.top-container {
+    background-image: url(https://i.stack.imgur.com/7f3er.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 .header {
     padding-top: 30px;
     padding-bottom: 500px;
@@ -13,12 +20,6 @@ body {
     color: whitesmoke;
 }
 
-.top-container {
-    background-image: url(https://i.stack.imgur.com/7f3er.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
 
 /* nav_bar */
 #nav_bar {
@@ -26,7 +27,7 @@ body {
     display: flex;
     justify-content: space-around;
     background-color:rgba(20, 20, 20, 0.5);
-    padding: 20px;
+    padding: 10px;
 }
 
 #nav_bar a {
@@ -47,7 +48,6 @@ body {
 
 /* content */
 .content {
-    padding: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -68,12 +68,19 @@ body {
     text-align: center;
     padding: 20px;
     border: 2px solid #333; 
+    margin: 16px;
 }
 
 .projects-box {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    background-color: black;
+    color: white;
 }
 /* /content */
 
