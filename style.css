@@ -3,14 +3,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(blue, white);
-    background-attachment: fixed;
 }
 
 
 /* top */
 .top-container {
-    background-image: url(https://i.stack.imgur.com/7f3er.jpg);
+    background-image: url(https://wallpaper-house.com/data/out/8/wallpaper2you_269797.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -24,7 +22,6 @@ body {
     font-size: 60px;
     color: whitesmoke;
 }
-
 
 /* nav_bar */
 #nav_bar {
@@ -42,6 +39,7 @@ body {
     border-radius: 30px;
     text-decoration: none;
     font-size: 20px;
+    transition-duration: 500ms;
 }
 
 #nav_bar a:hover {
@@ -55,6 +53,11 @@ body {
 }
 
 #aboutme {
+    position: relative;
+    top: -90px;
+}
+
+#resume {
     position: relative;
     top: -90px;
 }
@@ -90,11 +93,30 @@ body {
 .about-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 20px;
     border: 2px solid #333; 
     margin: 16px;
     background-color: white;
+}
+
+#me-img {
+    height: 190px;
+    width: 200px;
+    border-radius: 50%;
+    transition-duration: 500ms;
+}
+
+#me-img:hover{
+    height: 390px;
+    width: 400px;
+}
+
+.resume-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .projects-box {
