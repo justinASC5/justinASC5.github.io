@@ -40,11 +40,12 @@ body {
     text-decoration: none;
     font-size: 20px;
     transition-duration: 500ms;
+    transition-timing-function: ease-out;
 }
 
 #nav_bar a:hover {
-    background-color: black;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
 }
 
 #home {
