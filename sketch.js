@@ -1,4 +1,4 @@
-// nav_bar
+//nav_bar
 window.onscroll = function(){
     navStick();
 };
@@ -14,5 +14,9 @@ function navStick() {
         nav_bar.classList.remove("sticky");
     }
 }
+
+
+   
+
 
 
