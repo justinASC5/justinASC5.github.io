@@ -143,9 +143,13 @@ body {
     text-align: center;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .project1 {
     background-image: url(https://cdn-images-1.medium.com/max/1024/1*sVpEiHHDkQWphC38yZywNA.png);
-    height: 400px;
 }
 
 .contact-box {
