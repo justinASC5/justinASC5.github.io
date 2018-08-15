@@ -12,7 +12,7 @@ body {
     height: 807px;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/New-York-City-Backgrounds-HD-Pictures.jpg);
+    background-image: url(action-america-architecture-378570.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -20,11 +20,12 @@ body {
 }
 
 .header {
-    margin-top: 30px;
+    padding-top: 30px;
     /* padding-bottom: 628px; */
     text-align: center;
     font-size: 60px;
     color: whitesmoke;
+    /* background-color:rgba(20, 20, 20, 0.1); */
 }
 
 /* nav_bar */
@@ -149,7 +150,7 @@ body {
 }
 
 .project1 {
-    background-image: url(https://cdn-images-1.medium.com/max/1024/1*sVpEiHHDkQWphC38yZywNA.png);
+    background-image: url(action-america-architecture-378570.jpg);
 }
 
 .contact-box {
