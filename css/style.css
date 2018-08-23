@@ -12,7 +12,7 @@ body {
     height: 807px;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(action-america-architecture-378570.jpg);
+    background-image: url(../img/action-america-architecture-378570.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -108,14 +108,10 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     margin: 16px;
     background-color: white;
     transition: 500ms;
-}
-
-.about-box:hover{
-    box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #me-img {
@@ -136,6 +132,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background: url(../img/analog-camera-blackboard-camera-900106.jpg);
 }
 
 .projects-box {
@@ -150,7 +147,7 @@ body {
 }
 
 .project1 {
-    background-image: url(action-america-architecture-378570.jpg);
+    background-image: url(../img/action-america-architecture-378570.jpg);
 }
 
 .contact-box {
