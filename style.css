@@ -12,7 +12,7 @@ body {
     height: 807px;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(../img/action-america-architecture-378570.jpg);
+    background-image: url(action-america-architecture-378570.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -132,7 +132,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: url(../img/analog-camera-blackboard-camera-900106.jpg);
+    background: url(analog-camera-blackboard-camera-900106.jpg);
 }
 
 .projects-box {
@@ -147,7 +147,7 @@ body {
 }
 
 .project1 {
-    background-image: url(../img/action-america-architecture-378570.jpg);
+    background-image: url(action-america-architecture-378570.jpg);
 }
 
 .contact-box {
