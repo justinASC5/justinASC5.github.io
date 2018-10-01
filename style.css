@@ -161,6 +161,7 @@ body {
     background-color:rgba(20, 20, 20, 0.4);
     padding: 50px 18%;
     border: solid 2px black;
+    border-radius: 30px;
 }
 
 #view-resume-button {
@@ -171,6 +172,7 @@ body {
     cursor: pointer;
     transition: 500ms;
     transition-timing-function: ease-out;
+    border-radius: 30px;
 }
 
 #view-resume-button:hover {
