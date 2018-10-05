@@ -9,7 +9,7 @@ body {
 /* top */
 .top-container {
     display: flex;
-    height: 807px;
+    height: 100vh;
     flex-direction: column;
     justify-content: space-between; 
     background-image: url(img/landing-page2.jpg);
