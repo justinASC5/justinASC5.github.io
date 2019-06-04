@@ -173,6 +173,7 @@ body {
     transition: 500ms;
     transition-timing-function: ease-out;
     border-radius: 30px;
+    text-decoration: none;
 }
 
 #view-resume-button:hover {
@@ -188,33 +189,104 @@ body {
     padding: 20px;
 }
 
+#project-header {
+    margin-bottom: 60px;
+}
+
 .projects-container {
     display: flex;
     justify-content: space-around; 
 }
 
 .project1 {
-    border: solid 5px black;
+    /* border: solid 5px black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.project1:hover {
+    box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.2), 0 60px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #project1-pic {
-    height: 200px;
+    height: 100px;
+    margin: 75px;    
 }
 
 .project2 {
-    border: solid 5px black;
+    /* border: solid 5px black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.project2:hover {
+    box-shadow: 0 30px 20px 0 rgba(0, 0, 0, 0.2), 0 60px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #project2-pic {
-    height: 200px;
+    height: 100px;
+    margin: 75px;
+}
+
+#MCS {
+    margin-top: 100px;
+}
+ 
+#contact-header {
+    margin-bottom: 40px;
 }
 
 .contact-box {
+    padding-left: 20px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: black;
     color: white;
-    height: 400px;
+    height: 300px;
 }
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+#mail-icon {
+    height: 80px;
+    border-radius: 25px;
+    transition: 400ms;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+#mail-icon:hover {
+    height: 90px;
+}
+
+#linkedin-icon {
+    height: 80px;
+    border-radius: 15px;
+    transition: 400ms;
+    transition-timing-function: ease-out;
+}
+
+#linkedin-icon:hover {
+    height: 90px;
+}
+
+#github-icon {
+    height: 80px;
+    transition: 400ms;
+    transition-timing-function: ease-out;
+}
+
+#github-icon:hover {
+    height: 90px;
+}
+
 /* /content */
 
 

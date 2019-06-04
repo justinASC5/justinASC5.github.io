@@ -17,6 +17,11 @@ function navStick() {
     }
 }
 
+function email() {
+    alert("E-mail: justinbautista923@gmail.com");
+}
+  
+
 
    
 
