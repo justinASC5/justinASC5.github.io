@@ -51,6 +51,25 @@ html, body {
     background: rgba(0,0,0,.8);
 } 
 
+#backtotopbutton {
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    padding: 10px;
+    background: black;
+    color: yellow;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 30px;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+#backtotopbutton:hover {
+    background: yellow;
+    color: black;
+}
+
 #batman-logo {
     height: 100px;
 }
@@ -603,6 +622,10 @@ iframe {
         align-items: center;
         width: 100%;
         font-size: 18px;
+    }
+
+    #backtotopbutton {
+        right: 5px;
     }
 
     .profile-container {
