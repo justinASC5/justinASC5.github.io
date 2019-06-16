@@ -1,90 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 </style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Justin Bautista</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/Logo-Dark.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js" defer></script>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Batman</title>
+    <link rel="shortcut icon" href="img/batman-tab-icon.png">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src='main.js' defer></script>
 </head>
 <body>
     <div class="main-container">
-        <div id="home"></div>
-        <div class="top-container">  
-            <div class="header">
-                <div id="header-name">Justin Bautista</div> 
-                <div id="header-titles">Developer    |   Student     |   Engineer</div>
-            </div> 
-            <div id="nav_bar">
-                <a id="nav-button" href="#aboutme">About Me</a>
-                <a id="nav-button" href="#resume">Resume</a>
-                <div class="logo-box">
-                    <a href="#home"><img id="logo" src="img/Logo-Dark.png"></a>
-                </div>
-                <a id="nav-button" href="#projects">Projects</a>
-                <a id="nav-button" href="#contact">Contact</a>
-            </div>
-        </div> 
-        <div class="content">
-            <div id="aboutme"></div>
-            <div class="about-box">
-                <h1>About Me</h1>
-                <img id="me-img" src="img/me.jpg">
-                <p>An ambitious incoming student at New Jersey Institute of Technology, majoring in computer engineering. I am interested in machine learning, robotics, and web development. I am experienced in Java, JavaScript, HTML, CSS, and Python. I love to take on challenges, learn new things, help others, and improve.</p>
-            </div>
-            <div id="resume"></div>
-            <div class="resume-container">
-                <div class="resume-box">
-                    <h1>Resume</h1>
-                    <a id="view-resume-button" href="img/JustinBautista_Resume.pdf" target="_blank">View Justin's Resume</a>
+            <div class="top-container">
+                <div id="nav-bar">
+                    <div id="nav-logo">
+                        <img id="batman-logo" src="img/batman-logo.png">
+                    </div>
+                    <div id="nav">
+                        <a href="#gotoprofile">Profile</a>
+                        <a href="#gotoallies">Allies</a>
+                        <a href="#gotovillains">Villains</a>
+                        <a href="#gotoappearances">Appearances</a>
+                        <a href="#gotoquotes">Quotes</a>
+                        <a href="#gotocreator">The Creator</a>
+                    </div>
                 </div>
             </div>
-            <div id="projects"></div>
-            <div class="projects-box">
-                <h1 id="project-header">Projects</h1>
-                    <div class="projects-container">
-                        <div class="project1">
-                            <a href="College-Start/index.html" target="_blank">
-                            <img id="project1-pic" src="img/College Start Logo.jpg">
-                            </a>
+            <div class="content">
+                <div id="gotoprofile"></div>
+                <div class="profile-container">
+                    <div class="profile">
+                        <img id="profile-header" src="img/profile-header.png" height="100px" width="300px">
+                        <h3>
+                            One of the most iconic superheroes ever, Batman (aka Bruce Wayne), is a comic book 
+                            character created by artist Bob Kane and writer Bill Finger.
+                        </h3> 
+                        <p>
+                            When Bruce was a boy, his parents were murdered by muggers. This marked the beginnning 
+                            of Bruce's endless war against crime, the birth of the Batman. After the death of
+                            his parents, he was taken under the care of his butler, Alfred Pennyworth, 
+                            and took over his parents' multi-billion dollar company, Wayne Enterprises. 
+                            As the years past, he was able to develop skills to become the ultimate
+                            martial artist, detective, and strategist. Bruce's skills paired with 
+                            his advanced technology makes up the crime-fighting hero we know today.
+                            By day, he is Bruce Wayne, billionaire playboy. By night, he is the Caped
+                            Crusader, he is the Dark Knight, he is Batman.
+                        </p>
+                        <p id="more-batman">More on Batman <a href="https://batman.fandom.com/wiki/Batman" target="_blank">click here</a></p>
+                    </div>
+                    <img id="profile-img" src="img/profile-img.jpg"> 
+                </div>
+                <div id="gotoallies"></div>
+                <div class="ally-container">
+                    <img id="ally-header" src="img/ally-header.png" height="200px" width="400px">
+                    <div class="allies">
+                        <a href="https://batman.fandom.com/wiki/Robin" target="_blank">
+                        <div class="ally-box">
+                            <img id="ally-pic" src="img/robin.jpg">
+                            <h3 id="ally-name">Robin</h3>
                         </div>
-                        <div class="project2">
-                            <a href="RandomUserGenerator/index.html" target="_blank">
-                            <img id="project2-pic" src="https://cdn.pixabay.com/photo/2014/04/02/10/25/man-303792_960_720.png">
-                            </a>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Barbara_Gordon" target="_blank">
+                        <div class="ally-box">
+                            <img id="ally-pic" src="img/batgirl.jpg">
+                            <h3 id="ally-name">Batgirl</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Alfred_Pennyworth" target="_blank">
+                        <div class="ally-box">
+                            <img id="ally-pic" src="img/alfred.jpg">
+                            <h3 id="ally-name">Alfred Pennyworth</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Huntress_(Helena_Bertinelli)" target="_blank">
+                        <div class="ally-box">
+                            <img id="ally-pic" src="img/huntress.jpg">
+                            <h3 id="ally-name">Huntress</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/James_Gordon" target="_blank">
+                        <div class="ally-box">
+                            <img id="ally-pic" src="img/jamesgordon.jpg">
+                            <h3 id="ally-name">James Gordon</h3> 
+                        </div>
+                        </a>
+                        <a id="more-a-link" href="https://batman.fandom.com/wiki/Category:Allies" target="_blank">
+                        <h2 id="more-allies">More Allies</h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="gotovillains"></div>
+                <div class="villain-container">
+                    <img id="villain-header" src="img/villain-header.png" height="200px" width="500px">
+                    <div class="villains">
+                        <a href="https://batman.fandom.com/wiki/The_Joker" target="_blank">
+                        <div class="villain-box">
+                            <img id="villain-pic" src="img/joker.jpg">
+                            <h3 id="villain-name">The Joker</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Harley_Quinn" target="_blank">
+                        <div class="villain-box">
+                            <img id="villain-pic" src="img/harleyquinn.jpg">
+                            <h3 id="villain-name">Harley Quinn</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Bane" target="_blank">
+                        <div class="villain-box">
+                            <img id="villain-pic" src="img/bane.jpg">
+                            <h3 id="villain-name">Bane</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/Scarecrow" target="_blank">
+                        <div class="villain-box">
+                            <img id="villain-pic" src="img/scarecrow.jpg">
+                            <h3 id="villain-name">Scarecrow</h3> 
+                        </div>
+                        </a>
+                        <a href="https://batman.fandom.com/wiki/The_Penguin" target="_blank">
+                        <div class="villain-box">
+                            <img id="villain-pic" src="img/penguin.jpg">
+                            <h3 id="villain-name">Penguin</h3> 
+                        </div>
+                        </a>
+                        <a id="more-v-link" href="https://batman.fandom.com/wiki/Category:Villains" target="_blank">
+                        <h2 id="more-villains">More Villains</h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="gotoappearances"></div>
+                <div class="appearances-container">
+                    <div class="appearances-info">
+                        <div class="appearances-p">
+                            <img id="appearances-header" src="img/appearances-header.png" height="90px" width="500px">
+                            <h3>
+                                As one of the greatest comic book characters of all time, Batman has appeared everywhere
+                                in the media from comic books to films, since his debut.
+                            </h3>
+                            <p>
+                                This year marks the 80th year of Batman since his first appearance in <span>Detective
+                                Comics</span> #27 in May, 1939. Batman became increasingly popular soon after his debut and
+                                was given his own comic book title, <span>Batman</span>, the following year. The Dark Knight's 
+                                trusty sidekick, Robin, was introduced in <span>Detective Comics</span> #38 and two of his most 
+                                famous antagonists, The Joker and Catwoman, in <span>Batman</span> #1. In 1960, the Justice 
+                                League debuted in <span>The Brave and the Bold</span> #28. This was the first time seeing Batman 
+                                with the iconic team of the strongest heroes in the DC Universe. Batman soon was given his own 
+                                TV series, <span>Batman</span>, in 1966. In 1989, The Caped Crusader made his way to the big 
+                                screen with Tim Burton's <span>Batman</span>, where he battled against The Clown Prince of Crime, 
+                                The Joker. Since his film in 1989, Batman has made more appearances in TV series and films. Batman
+                                has stayed popular to this day and will remain that way forever.
+                            </p>
+                            <p>More on the history of Batman <a href="https://www.dccomics.com/blog/2019/03/19/batman-a-history-of-heroics-the-beginning" target="_blank">click here</a></p>
+                        </div>
+                        <div id="batman-vid">
+                            <iframe width="510" height="300" src="https://www.youtube.com/embed/KkoN9NVDKEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <h1 id="MCS">More Coming Soon...</h1>
-            </div>
-            <div id="contact"></div>
-            <div class="contact-box">
-                <h1 id="contact-header">Contact</h1>
-                    <div id="contacts">
-                        <div class="contact1-container">
-                            <img id="mail-icon" src="img/mail-icon.png" onclick="email()"> 
-                        </div>
-                        <div class="contact2-container">
-                            <a href="https://www.linkedin.com/in/justin-bautista-8301ba168?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVG3kRULPT3qepvlxPcbCcA%3D%3D" target="_blank">
-                            <img id="linkedin-icon" src="img/linkedin-icon.png">
+                    <div id="separator"></div>
+                    <div class="movies-shows-container">
+                        <h2 id="movie-header">Movies</h2>
+                        <div class="movies">
+                            <a href="https://www.imdb.com/title/tt0096895/" target="_blank">
+                            <div class="movie-box">
+                                <img id="movie-pic" src="img/batman1989.jpg">
+                                <h3 id="movie-name">Batman<br>(1989)</h3> 
+                            </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt0118688/" target="_blank">
+                            <div class="movie-box">
+                                <img id="movie-pic" src="img/batman&robin1997.jpg">
+                                <h3 id="movie-name">Batman & Robin<br>(1997)</h3> 
+                            </div>  
                             </a>
+                            <a href="https://www.imdb.com/title/tt0468569/" target="_blank">
+                            <div class="movie-box">
+                                <img id="movie-pic" src="img/thedarkknight2008.jpg">
+                                <h3 id="movie-name">The Dark Knight<br>(2008)</h3> 
+                            </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt2975590/" target="_blank">
+                            <div class="movie-box">
+                                    <img id="movie-pic" src="img/batmanvsuperman2016.jpg">
+                                    <h3 id="movie-name">Batman v<br>Superman:<br>Dawn of Justice<br>(2016)</h3> 
+                                </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt0974015/" target="_blank">
+                            <div class="movie-box">
+                                <img id="movie-pic" src="img/justiceleague2017.jpg">
+                                <h3 id="movie-name">Justice League<br>(2017)</h3> 
+                            </div>  
+                            </a>   
+                            <a id="more-m-link" href="https://www.imdb.com/list/ls059646235/" target="_blank">
+                                <h2 id="more-movies">More Movies</h2>
+                            </a>        
                         </div>
-                        <div id="contact3-container">
-                            <a href="https://github.com/justinASC5" target="_blank">
-                            <img id="github-icon" src="img/GitHub-Mark-Light-120px-plus.png">
+                        <div id="separator"></div>
+                        <h2 id="show-header">TV Shows</h2>
+                        <div class="tvshows">
+                            <a href="https://www.imdb.com/title/tt0059968/" target="_blank">
+                            <div class="show-box">
+                                <img id="show-pic" src="img/batmanshow.jpg">
+                                <h3 id="show-name">Batman<br>(1966-1968)</h3> 
+                            </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt0103359/" target="_blank">
+                            <div class="show-box">
+                                <img id="show-pic" src="img/batmantheanimatedseries.jpg">
+                                <h3 id="show-name">Batman:<br>The Animated<br>Series<br>(1992-1995)</h3> 
+                            </div>  
                             </a>
+                            <a href="https://www.imdb.com/title/tt0147746/" target="_blank">
+                            <div class="show-box">
+                                <img id="show-pic" src="img/batmanbeyond.jpg">
+                                <h3 id="show-name">Batman Beyond<br>(1999-2001)</h3> 
+                            </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt0275137/" target="_blank">
+                            <div class="show-box">
+                                    <img id="show-pic" src="img/justiceleagueshow.jpg">
+                                    <h3 id="show-name">Justice League<br>(2001-2004)</h3> 
+                                </div>  
+                            </a> 
+                            <a href="https://www.imdb.com/title/tt3749900/" target="_blank">
+                            <div class="show-box">
+                                <img id="show-pic" src="img/gotham.jpg">
+                                <h3 id="show-name">Gotham<br>(2014-2019)</h3> 
+                            </div>  
+                            </a>   
+                            <a id="more-s-link" href="https://www.imdb.com/list/ls033188584/" target="_blank">
+                                <h2 id="more-shows">More TV Shows</h2>
+                            </a>        
                         </div>
-                    </div>
+                    </div>  
+                </div>
+                <div id="gotoquotes"></div>
+                <div class="quotes-container">
+                    <img id="quote-header" src="img/quote-header.png" height="175px" width="550px">
+                        <div class="quote-box"> 
+                            <p id="quote">“Our greatest glory is not in ever falling, but in rising every time we fall.”</p>
+                            <button id="button"> 
+                                See Another Quote
+                            </button>
+                        </div>    
+                </div>
             </div>
-        </div>
-    </div>
-    
+            <div id="gotocreator"></div>
+            <div class="creator-container">
+                <h2>To See More From The Creator Of This Website</h2>
+                <h2>Click Here</h2>
+                <a href="personal/index.html" target="_blank">
+                <img id="creator-logo" src="img/Logo-Dark.png">
+                </a>
+            </div>
+    </div>    
 </body>
 </html>
