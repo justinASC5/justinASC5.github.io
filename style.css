@@ -649,6 +649,10 @@ html, body {
             font-size: 18px;
         }
 
+        .top-container {
+            background-attachment: unset;
+        }
+
         .profile-container {
             flex-direction: column;
             justify-content: center;
