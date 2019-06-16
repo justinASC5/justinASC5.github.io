@@ -52,7 +52,7 @@ html, body {
 } 
 
 #backtotopbutton {
-    position: absolute;
+    position: fixed;
     right: 25px;
     bottom: 5px;
     padding: 10px;
