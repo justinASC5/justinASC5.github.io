@@ -13,10 +13,13 @@
     <link rel='stylesheet' type='text/css' href='style.css'>
     <script src='main.js' defer></script>
 </head>
-<body>
-    <div class="main-container">
+    <body>
+        <div class="main-container">
+
             <div id="backtotop"></div>
+            <!-- top-container is the landing screen which holds the navbar -->
             <div class="top-container">
+                <!-- nav-bar holds the logo and navigation buttons -->
                 <div id="nav-bar">
                     <div id="nav-logo">
                         <img id="batman-logo" src="img/batman-logo.png">
@@ -32,8 +35,12 @@
                 </div>
                 <a id="backtotopbutton" href="#backtotop">Back to Top</a>
             </div>
+            
+            <!-- content holds the profile, allies, villains, appearances, and quotes sections of the website -->
             <div class="content">
+                
                 <div id="gotoprofile"></div>
+                <!-- profile-container holds the profile text and the profile image -->
                 <div class="profile-container">
                     <div class="profile">
                         <img id="profile-header" src="img/profile-header.png" height="100px" width="300px">
@@ -56,10 +63,14 @@
                     </div>
                     <img id="profile-img" src="img/profile-img.jpg"> 
                 </div>
+                
                 <div id="gotoallies"></div>
+                <!-- ally-container holds ally-header and allies -->
                 <div class="ally-container">
                     <img id="ally-header" src="img/ally-header.png" height="200px" width="400px">
+                    <!-- allies holds all the ally boxes including the more allies box  -->
                     <div class="allies">
+                        <!-- each ally-box is laid over the ally-pic to give the darkening effect and show the ally name when hovering -->
                         <a href="https://batman.fandom.com/wiki/Robin" target="_blank">
                         <div class="ally-box">
                             <img id="ally-pic" src="img/robin.jpg">
@@ -95,7 +106,9 @@
                         </a>
                     </div>
                 </div>
+                
                 <div id="gotovillains"></div>
+                <!-- the villain section works the same as the ally section of the website -->
                 <div class="villain-container">
                     <img id="villain-header" src="img/villain-header.png" height="200px" width="500px">
                     <div class="villains">
@@ -134,8 +147,11 @@
                         </a>
                     </div>
                 </div>
+                
                 <div id="gotoappearances"></div>
+                <!-- appearances-container holds the appearances text, the batman video, the movies, and the tv shows -->
                 <div class="appearances-container">
+                    <!-- appearances-info holds the appearances text and video -->
                     <div class="appearances-info">
                         <div class="appearances-p">
                             <img id="appearances-header" src="img/appearances-header.png" height="90px" width="500px">
@@ -163,8 +179,10 @@
                         </div>
                     </div>
                     <div id="separator"></div>
+                    <!-- movies-shows-container holds the movies and tvshows -->
                     <div class="movies-shows-container">
                         <h2 id="movie-header">Movies</h2>
+                        <!-- movies works the same as allies and villains sections -->
                         <div class="movies">
                             <a href="https://www.imdb.com/title/tt0096895/" target="_blank">
                             <div class="movie-box">
@@ -202,6 +220,7 @@
                         </div>
                         <div id="separator"></div>
                         <h2 id="show-header">TV Shows</h2>
+                        <!-- tvshows works the same as allies, villains, and movies sections -->
                         <div class="tvshows">
                             <a href="https://www.imdb.com/title/tt0059968/" target="_blank">
                             <div class="show-box">
@@ -240,24 +259,29 @@
                     </div>  
                 </div>
                 <div id="gotoquotes"></div>
+                <!-- quotes-container holds the quote header, quote box, and quote button -->
                 <div class="quotes-container">
                     <img id="quote-header" src="img/quote-header.png" height="175px" width="550px">
                         <div class="quote-box"> 
+                            <!-- quote starts with a starting quote and is replaced using javascript -->
                             <p id="quote">“Our greatest glory is not in ever falling, but in rising every time we fall.”</p>
+                            <!-- button to generate a new quote -->
                             <button id="button"> 
                                 See Another Quote
                             </button>
                         </div>    
                 </div>
             </div>
+
             <div id="gotocreator"></div>
             <div class="creator-container">
                 <h2>To See More From The Creator Of This Website</h2>
                 <h2>Click Here</h2>
+                <!-- the creator-logo image has a link to my personal website -->
                 <a href="personal/index.html" target="_blank">
                 <img id="creator-logo" src="img/Logo-Dark.png">
                 </a>
             </div>
-    </div>    
-</body>
+        </div>    
+    </body>
 </html>

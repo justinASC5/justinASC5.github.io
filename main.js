@@ -1,4 +1,4 @@
-let numberArray = [];     //Array of numbers to be used as positions for the quoteArray
+let numberArray = [];     //Empty array that will be filled with numbers that will be used as positions for the quoteArray
 let quoteArray = [
     '"Bats frighten me. It’s time my enemies share my dread."',
     '"Perhaps the knife was too slow."',
@@ -22,36 +22,38 @@ let quoteArray = [
     '"Why do we fall? So we can learn to pick ourselves up."'
 ];
 
-//Generates a new array of numbers
+//Generates a new array of numbers for numberArray
 function generateArray() {      
   for(let i = 0; i < 20; i++){
     numberArray.push(i);
   }
 }
 
- //Picks a random number from the number array, removes it from the number array (to prevent repeats), 
- //and uses it as a position for the quote array 
+ //Picks a random number from the numberArray, removes it from the numberArray (to prevent repeats), 
+ //and uses it as a position for the quoteArray 
 function randomQuote() {       
-    if(numberArray.length == 0){  //Generates a new number array once every number was used
+    if(numberArray.length == 0){  //Generates a new number array once every number in numberArray was used
       generateArray();
     }
    let randomNum = Math.floor((Math.random() * numberArray.length)); 
-   let quotePosition = numberArray[randomNum]; //Takes the number in the position of the random number
-   numberArray.splice(randomNum, 1); //Removes number from number array
-   return quotePosition;
+   let quotePosition = numberArray[randomNum]; //Takes the number in the numberArray in the position of the random number
+   numberArray.splice(randomNum, 1); //Removes number from numberArray
+   return quotePosition;  //Returns number from numberArray that was randomly chosen
 }
 
 const button = document.getElementById("button");
 button.addEventListener('click', buttonClick);
 function buttonClick(event) {
-    document.getElementById("quote").innerHTML = quoteArray[randomQuote()];
+    document.getElementById("quote").innerHTML = quoteArray[randomQuote()]; //Replaces quote in HTML with a new quote in a random position in quoteArray
 }
 
 
 const backToTop = document.getElementById("backtotopbutton");
-
+//When user scrolls, scrollFunction activates
 window.addEventListener("scroll", scrollFunction);
 
+//If the user scrolls a distance that exceeds 300 pixels from the top of the web page, the back to top button will appear
+//The back to top button will remain invisible any scroll distance less than 300 pixels from the top of the web page 
 function scrollFunction() {
   if(window.pageYOffset > 300){
     backToTop.style.display = "block";
