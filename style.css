@@ -680,6 +680,7 @@ html, body {
             justify-content: space-around;
             padding: 50px 0px;
             height: auto;
+            background-attachment: unset;
         }
         
         #ally-header {
@@ -753,6 +754,7 @@ html, body {
             justify-content: space-around;
             padding: 50px 0px;
             height: auto;
+            background-attachment: unset;
         }
         
         .villains {
@@ -983,11 +985,7 @@ html, body {
             justify-content: center;
             align-items: center;
             padding: 90px 0px;
-            background: url(img/quote-background.jpg);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: top;
-            background-size: cover;
+            background-attachment: unset;
         }
         
         #quote-header {
@@ -1021,7 +1019,7 @@ html, body {
         }
         
         .creator-container h2 {
-            font-size: 18px;
+            font-size: 15px;
         }
         
         #creator-logo {
