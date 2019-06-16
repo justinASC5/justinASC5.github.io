@@ -48,4 +48,16 @@ function buttonClick(event) {
 }
 
 
+const backToTop = document.getElementById("backtotopbutton");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if(window.pageYOffset > 300){
+    backToTop.style.display = "block";
+  }
+  else {
+    backToTop.style.display = "none";
+  }
+}
 
