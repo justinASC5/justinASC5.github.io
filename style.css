@@ -995,6 +995,8 @@ html, body {
         }
         
         .quote-box {
+            display: flex;
+            justify-content: space-between;
             padding: 10px;
             width: 90%;
             font-size: 25px;
@@ -1002,12 +1004,13 @@ html, body {
         }
 
         #quote {
-            height: 400px;
-            margin-top: 0px;
+            height: auto;
+            margin-top: 20px;
         }
         
         #button {
             margin-top: 0px;
+            margin-bottom: 10px;
         }
         
         .creator-container {
