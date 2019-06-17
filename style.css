@@ -627,7 +627,7 @@ html, body {
 
     /* 3rd stage of shrinking window width...start */
     /* keeps the text in the creator's section in the center by making font smaller */
-    @media (max-width: 500px){
+    @media (max-width: 510px){
         .creator-container h2 {
             font-size: 18px;
         } 
