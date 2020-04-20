@@ -4,12 +4,12 @@ fetch('https://randomuser.me/api')
         return json;
     })
     .then(function(data) {
-        let firstName = data.results[0].name.first;
+        let firstName = data.results[0].name.first;  
         let lastName = data.results[0].name.last;
         let fullName = `${firstName} ${lastName}`;
         let fullCapName = capitalize(fullName);
 
-        function capitalize(str){
+        function capitalize(str){   //capitalizes the first letters of all words
             let array = str.split(' ');
             let strng = "";
         
@@ -25,11 +25,10 @@ fetch('https://randomuser.me/api')
             return strng;
         }
 
-        let streetName = data.results[0].location.street;
         let cityName = data.results[0].location.city;
         let stateName = data.results[0].location.state;
         let postalCode = data.results[0].location.postcode;
-        let loc = `${streetName}, ${cityName}, ${stateName}, ${postalCode}`;
+        let loc = `${cityName}, ${stateName}, ${postalCode}`;
         let userLocation = capitalize(loc);
 
         let birthDate = data.results[0].dob.date;
@@ -37,18 +36,10 @@ fetch('https://randomuser.me/api')
         let formatter = formatBDay(birthDate);
         let birthAge = `${formatter}, ${yrsOld} years old`;
 
-        function formatBDay(birthday){
+        function formatBDay(birthday){  //puts date in mm/dd/yyyy format
             let bday = birthday;
-            for(let i = 0; i < bday.length; i++){
-              if(bday[i] === "-"){
-                bday[i] = "/";
-              }
-              if(bday[i] === "T"){
-                bday = bday.substring(0, i);
-              }
-            }
-            let month = bday.substring(6, 7);
-            let day = bday.substring(9, 10);
+            let month = bday.substring(5, 7);
+            let day = bday.substring(8, 10);
             let year = bday.substring(0, 4);
             bday = `${month}/${day}/${year}`;
             return bday;
@@ -58,7 +49,7 @@ fetch('https://randomuser.me/api')
         let idValue = data.results[0].id.value;
         let fullID = `${idName} ${idValue}`;
 
-        if(idName === "" || idValue === null){
+        if(idName === "" || idValue === null){  //if no id is found, null is replaced with N/A
             fullID = "N/A";
         }
 
@@ -80,7 +71,7 @@ fetch('https://randomuser.me/api')
         let phoneNumber = data.results[0].phone;
         let cellNumber = data.results[0].cell;
 
-        if(phoneNumber.charAt(0) != "("){
+        if(phoneNumber.charAt(0) != "("){   //if phone number doesn't have a parantheses, picks a random number from cellPhoneArray 
             phoneNumber = cellPhoneArray[Math.floor(Math.random() * 48)];
         }
 
@@ -104,7 +95,7 @@ fetch('https://randomuser.me/api')
 
         button.addEventListener('click', buttonClick);
 
-        function buttonClick(event){
+        function buttonClick(event){    //refreshes window after clicking button
             event.preventDefault();
             window.location.reload();
         }

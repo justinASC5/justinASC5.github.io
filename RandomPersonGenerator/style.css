@@ -1,25 +1,41 @@
-body{
+body,html{
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
     }
-    
-    header {
-        text-align: center;
-        padding: 10px 0px;
-        font-size: 45px;
-        background-color: #333;
-        color: #3d74ff;
-    }
+
+h2 {
+    font-size: 35px;
+    margin: 25px 0px;
+}
     
     .content {
         display: flex;
-        flex-direction: column;
-        padding-top: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        background: url("../img/seaport-during-daytime-132037.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .picture-box {
         text-align: center;
+        background: rgba(0,0,0,0.8);
+        width: 60%;
+        padding: 50px 0px;
+        border-radius: 40px;
     }
     
     #picture {
@@ -27,24 +43,7 @@ body{
         width: 125px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
-    .info {
-        display: flex;
-        border: solid 5px black;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-    
-    .left-box {
-        border-right: solid 5px black;
-        padding: 15px 45px;
-    }
-    
-    .right-box {
-        padding: 15px 45px;
-    }
-    
+
     .generateButton {
         text-align: center;
         padding-bottom: 20px;
@@ -59,6 +58,8 @@ body{
         border-radius: 15px;
         cursor: pointer;
         box-shadow: 0 9px #999;
+        transition: 500ms;
+        transition-timing-function: ease-out;
     }
     
     #button:hover {
@@ -69,7 +70,42 @@ body{
       background-color: blue;
       box-shadow: 0 5px #666;
       transform: translateY(4px);
+    }
+
+    .left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 55%;
+        background: #121212;
+    }
+
+    #logo {
+        width: 75%;
+        padding-left: 40px;
+        padding-top: 30px; 
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px;
+        padding-top: 20px;
+        border-top: solid 1px rgba(255, 255, 255, 0.1);
+    }
     
+    .left-box {
+        width: 50%;
+    }
     
+    .right-box {
+        width: 50%;
+        padding-left: 50px;
+    }
+    
+    @media(max-width: ) {
+
+    }
     
     
